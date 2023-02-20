@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+    <head>
+        <style>
+.circle {
+   position: relative;
+   width:300px;
+   height:300px;
+   margin-left: 70px;
+   border-radius: 200px;
+   font-size:20px;
+   color:#fff;
+   background:rgba(42, 57, 231, 0.726);
+}
+.circle:hover {
+   width:400px;
+   height:400px;
+   border-radius: 300px;
+}
+.word{
+    text-align: center;
+    padding-top: 45px;
+}
+.align{
+    margin-left: 400px;
+}
+    </style>
+
+    </head>
+<body>
+    <div class="align">
+  <h1>Onclick</h1>
+  <img src="monkey.png" onclick="changeImage(this)" />
+  <br><br><br>
+    <div class="circle">
+    <p class="word">Hover</p>
+    </div> 
+</div>
+   
+  <script>
+
+    function changeImage(image) {
+        image.src = 'monkeyClose.png';
+    }
+
+  </script>
+</body>
+</html>
